@@ -13,6 +13,6 @@
 - name: demo playbook second
   hosts: all
   tasks:
-    - name: Print hello world
+    - name: Get uptime information
       ansible.builtin.debug: /usr/bin/uptime
       register: result
