@@ -10,5 +10,7 @@
       when: ansible_default_ipv4.gateway is defined
 
  - name: Get uptime information
-   ansible.builtin.shell: /usr/bin/uptime
-   register: result
+   hosts: all
+   tasks:
+      ansible.builtin.shell: /usr/bin/uptime
+      register: result
