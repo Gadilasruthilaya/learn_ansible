@@ -11,7 +11,7 @@
 
 
 - name: demo playbook second
+  hosts: all
   tasks:
-    - name: Get uptime information
       ansible.builtin.shell: /usr/bin/uptime
       register: result
