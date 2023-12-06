@@ -14,5 +14,5 @@
   hosts: all
   tasks:
     - name: Get uptime information
-      ansible.builtin.debug: /usr/bin/uptime
+      ansible.builtin.shell: /usr/bin/uptime
       register: result
