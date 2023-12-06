@@ -12,6 +12,5 @@
 
 - name: demo playbook second
   hosts: all
-  tasks:
-      ansible.builtin.shell: /usr/bin/uptime
-      register: result
+  ansible.builtin.shell: /usr/bin/uptime
+  register: result
